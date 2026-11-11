@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="LoginTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-11-11T18:36:15.126Z" hostname="LAPTOP-UERCJAC9" time="8.08">
+  <properties/>
+  <testcase name="successfulLoginTest()" classname="LoginTests" time="8.059"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Nov 11, 2026 9:36:20 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 157, returning the closest version; found: 153; Please update to a Selenium version that supports CDP version 157
+]]></system-err>
+</testsuite>
