@@ -4,12 +4,13 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.*;
 
 public class LoginTests {
+    private static String msg = ""Welcome, user1!!!!!!!""
     @Test
     void successfulLoginTest(){
         open("https://autotests.ai/stack/backend-java-spring/frontend-typescript-react/login");
         $("[data-testid=login-input]").setValue("user1");
         $("[data-testid=password-input]").setValue("password1").pressEnter();
-        $("[data-testid=welcome-message]").shouldBe(text("Welcome, user1!"));
+        $("[data-testid=welcome-message]").shouldBe(text(msg));
 
         closeWebDriver();
     }
