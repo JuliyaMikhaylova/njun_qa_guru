@@ -13,5 +13,14 @@ public class LoginTests {
 
         closeWebDriver();
     }
+    @Test
+    void emptyLoginLoginTest(){
+        open("https://autotests.ai/stack/backend-java-spring/frontend-typescript-react/login");
+        $("[data-testid=login-input]").setValue("");
+        $("[data-testid=password-input]").setValue("password1").pressEnter();
+        $("[data-testid=error-message]").shouldBe(text("Login is required (minimum 3 characters)"));
+
+        closeWebDriver();
+    }
     }
 
