@@ -23,5 +23,14 @@ public class LoginTests {
 
         closeWebDriver();
     }
+    @Test
+    void less3charactersLoginLoginTest(){
+        open("https://autotests.ai/stack/backend-java-spring/frontend-typescript-react/login");
+        $("[data-testid=login-input]").setValue("u");
+        $("[data-testid=password-input]").setValue("password1").pressEnter();
+        $("[data-testid=error-message]").shouldBe(text("Login must be at least 3 characters"));
+
+        closeWebDriver();
+    }
     }
 
