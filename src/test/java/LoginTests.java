@@ -9,7 +9,7 @@ public class LoginTests {
         open("https://autotests.ai/stack/backend-java-spring/frontend-typescript-react/login");
         $("[data-testid=login-input]").setValue("user1");
         $("[data-testid=password-input]").setValue("password1").pressEnter();
-        $("[data-testid=welcome-message]").shouldBe(text("Welcome, user1!"));
+        $("[data-testid=welcome-message]").shouldBe(text("Welcome, user1!!!!!!!"));
 
         closeWebDriver();
     }
